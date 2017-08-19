@@ -1,0 +1,83 @@
+# Basic
+title: chenyyx
+subtitle: ApacheCN_xy
+description: Welcome to my blog~
+# 头像里面的标题
+avatarTitle: Joy yx
+# 头像里面的描述
+avatarDesc: ML/DL...
+url: "http://www.yyx.ai"
+
+# Comment
+comment:
+    provider: duoshuo
+    duoshuo:
+     short_name: chenyyx
+
+# Social
+social:
+    weibo: 3127633115
+    weixing: data_runner 
+    github: chenyyx
+    # twitter: 
+    mail: chinachenyyx@163.com
+    csdn: ApacheCN_Xy
+
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: 399945e4879e7b93715374b895b36bdb 
+
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+#ga:
+# id: UA-84134159-3   
+#  host: auto  
+
+
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址： https://github.com/chenyyx/chenyyx.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: 
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}   
+    - {title: 留言, description: liuyan, url: '/liuyan'}
+    - {title: 资源, description: ziyuan, url: '/ziyuan'}
+    - {title: 关于我, description: about, url: '/about'}
+
+          
+    
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 20
+paginate_path: "page/:num/"
+
+
+# valine:
+#   enable: true
+#   appId: 5z3QHKTEMlSqxReRnfeFG1cC-gzGzoHsz
+#   appKey: 59CrEdy9yw1xmqcDQ4JcJbWy
+
+
