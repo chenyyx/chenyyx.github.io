@@ -66,14 +66,14 @@ tag: 博客
 
 ### 选择博客模板
 
-- 例如，我选择了<a href="https://github.com/leopardpan/leopardpan.github.io/">baixin</a>的博客模板。如果大家喜欢，可以将这个download下来。也可以去<a href="https://github.com/MengZheK/kangblog.github.io/">我的github</a>上fork我的。
+- 例如，我选择了<a href="https://github.com/leopardpan/leopardpan.github.io/">baixin</a>的博客模板。如果大家喜欢，可以将这个download下来。也可以去<a href="https://github.com/chenyyx/chenyyx.github.io/">我的github</a>上fork我的。
 
 ### 将模板修改为自己的博客
 
-- 将上述模板下载后，解压。并将leopardpan.github.io-master里面的文件copy到kangblog.github.io文件夹里。此时，如果你打开Jekyll服务，即：命令行模式输入
+- 将上述模板下载后，解压。并将leopardpan.github.io-master里面的文件copy到chenyyx.github.io文件夹里。此时，如果你打开Jekyll服务，即：命令行模式输入
 
 ```
-cd d://zhijun/kangblog.github.io
+cd d://ApacheCN/chenyyx.github.io
 ```
 
 
@@ -85,7 +85,7 @@ jekyll serve
 
 那么现在来修改模板，呈现你的东西吧。（为了方便编辑各种格式的文件，建议事先安装sublime Text）
 
-工作路径：```d://zhijun/kangblog.github.io```
+工作路径：```d://ApacheCN/chenyyx.github.io```
 
 **1、修改配置文件**
 
@@ -169,7 +169,7 @@ git commit -a
 git push
 ```
 
-当同步完成后，在浏览器输入你的域名，比如我的是：```robotkang.cc```，然后就能看到你的博客了。任何人都可以看到哦。   
+当同步完成后，在浏览器输入你的域名，比如我的是：```yyx.ai```，然后就能看到你的博客了。任何人都可以看到哦。   
 
 
 
@@ -210,7 +210,7 @@ git push
 
 ## 结束语
 
-由于我也是个菜鸟新手。所以如果大家有什么问题的话，可以留言，也可以email（robotkang@foxmail.com）我，请教谈不上，大家一起探讨。
+由于我也是个菜鸟新手。所以如果大家有什么问题的话，可以留言，也可以email（chinachenyyx@163.com）我，请教谈不上，大家一起探讨。
 
 
 **本文转载自Lilian，后稍加改之。特此声明！** 
