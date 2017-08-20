@@ -6,27 +6,30 @@ date: 2017-08-20
 <a href="/photos/" target="_blank"><img src="http://omjh2j5h3.bkt.clouddn.com/%E5%A4%A9%E7%AD%96.jpg" width="150" height="150" alt="photos"/></a>
 
 <p>
-一个即将走出象牙塔的 Maker「未更新」<a href="{{ site.baseurl }}/jianli.pdf" target="_blank"> 「我的简历」 </a>    
+一个涉世未深，有闯劲儿的 old boy ，依然相信雷布斯的话，永远相信美好的事情即将到来。<a href="{{ site.baseurl }}/jianli.pdf" target="_blank"> 「我的简历」 </a>    
 
 
 <div style="color:#FF6633">
-<p>	三尺微命，一介书生。求学于卫星湖畔，黄瓜山下，欲潜心研究智能机器人开发应用之道。然所学颇杂，对诸多方面均有涉猎，喜欢研究一些新技术和关注一些最新的科技~
+<p>	我叫瑶瑶，大名大瑶瑶，小名小瑶瑶，装逼名小瑶，当然也可以叫我老瑶瑶，但是拜托不要叫我窑子（掩面痛哭），我不是那种地方，更别叫我腰子，烤一个我都用不了多少钱。
 </p>
 </div>
 <p>
-平时喜欢整理个人博客，逛逛技术论坛     
+在一个不是 985，也不是 211 ，但是吊炸天的大学上完了本科
 <p>
-喜欢日本，想着如果有机会一定会去日本生活一段时间        
+希望做一个人人都喊男神的攻城狮，怎奈岁月捉弄人，变成了一个死肥宅...
+<p>
+喜欢日本，想着如果有机会一定会去日本生活一段时间
+</p>        
 <div style="color:#008B00">
 <p>
-喜欢Spoken English，虽然现在很渣，但一直在努力...        
+喜欢装逼的时候扯一两句 English ，虽然现在很渣，但一直在努力...        
 </p>
 
 </div>
 <p>
-同时喜欢老罗和晓松，虽然他俩还撕逼，罗跟谁不撕逼，爱听老罗的单口相声           
+平时喜欢爬爬山，逛逛公园，总之不是在家里宅着就好...           
 <p>
-I’m a single-dog.  But codes and godgirl are my favorite.  Life is colorful, this website   is a window which used to present the color of my life.       
+Although I have a very very very beautiful girlfriend, but there are girls looking for me, I will not refuse.     
 
 <p>
 
@@ -69,11 +72,11 @@ I’m a single-dog.  But codes and godgirl are my favorite.  Life is colorful, t
 	}
 </script>
 
-<p>邮箱：chinachenyyx@163.com &emsp;<a href="#" onmouseover="mousemethod('block','img1')" onmouseout="mousemethod('none','img1')" style="color:#FF4500;text-decoration:none">微信：data_runner</a><img id="img1" src="http://omjh2j5h3.bkt.clouddn.com/kangweix.png" style="display:none;"  width="128" height="128">&emsp;
-	<a href="#" onmouseover="mousemethod('block','img2')" onmouseout="mousemethod('none','img2')" style="color:#008B00;text-decoration:none">公众号：robotkang</a><img id="img2" src="http://omjh2j5h3.bkt.clouddn.com/kanggzh.png" style="display:none;" width="128" height="128" >
+<p>邮箱：chinachenyyx@163.com &emsp;<a href="#" onmouseover="mousemethod('block','img1')" onmouseout="mousemethod('none','img1')" style="color:#FF4500;text-decoration:none">微信：data_runner</a><img id="img1" src="http://od8sm9q7x.bkt.clouddn.com/wechat.png" style="display:none;"  width="128" height="128">&emsp;
+	<a href="#" onmouseover="mousemethod('block','img2')" onmouseout="mousemethod('none','img2')" style="color:#008B00;text-decoration:none">公众号：Apache中文网</a><img id="img2" src="http://od8sm9q7x.bkt.clouddn.com/apachecn-qrcode.jpg" style="display:none;" width="128" height="128" >
  
 <p>
-<a href="/lovekang/" style="color:#708090"  target="_blank"> <h5>Website Time</h5></a>  
+<a href="/yyyyyx/" style="color:#708090"  target="_blank"> <h5>Website Time</h5></a>  
 </p>
 
 

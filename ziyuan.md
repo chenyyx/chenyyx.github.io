@@ -11,28 +11,19 @@ title: 资源「USEFUL LINKS」
 <h3> Personal Website</h3>   
 <p>
 
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/%E9%85%8D%E8%89%B2%E5%99%A8.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
+<img src="http://od8sm9q7x.bkt.clouddn.com/%E9%85%8D%E8%89%B2%E5%99%A8.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
 <a href="/college/" target="_blank">大学|四年</a>- 记青春年华.&nbsp;&nbsp;
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/%E4%BC%98%E7%95%8C%E7%BD%91.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
+<img src="http://od8sm9q7x.bkt.clouddn.com/%E4%BC%98%E7%95%8C%E7%BD%91.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
 <a href="/college/" style="color:#DC143C" target="_blank">二三好友</a>- 似水流年 & FLAG&nbsp;&nbsp;
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/Colorfavs.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
+<img src="http://od8sm9q7x.bkt.clouddn.com/Colorfavs.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
 <a href="/book/" style="color:#DC143C" target="_blank">个人书单</a>-  FLAG&nbsp;&nbsp;
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/%E5%AD%A6UI%E7%BD%91.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
+<img src="http://od8sm9q7x.bkt.clouddn.com/%E5%AD%A6UI%E7%BD%91.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
 <a href="http://robotkang.xyz" style="color:#DC143C" target="_blank">Company</a>- FLAG
 
-<p>
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/%E6%B1%82%E5%AD%97%E4%BD%93.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
-<a href="http://wiki.robotkang.cc" target="_blank" style="text-decoration:none" > Robotkang's Wiki </a>个人维基百科库，还未整理！    
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/app%E8%A7%84%E8%8C%83.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
-<a href="/app/" target="_blank">APP下载1</a>
-<img src="http://omjh2j5h3.bkt.clouddn.com/icon/app%E8%A7%84%E8%8C%83.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
-<a href="/APP/" target="_blank">APP下载2</a>- 专属软件.&nbsp;&nbsp;
-
 <P>       
-<h3> Some useful/beautiful web </h3>   
+<h3> Something useful/beautiful </h3>   
 <p>
 <a href="https://www.panc.cc" target="_blank">胖次</a>- 网盘，资料搜索..&nbsp;&nbsp;
-<a href="https://lvpn.info/aff.php?id=923137" target="_blank">科学上网</a>- VPN,翻墙 &nbsp;&nbsp;
 <a href="http://daohang.lusongsong.com/" target="_blank">博客大全</a>- Blog&nbsp;&nbsp;
 
 <p>
@@ -45,23 +36,22 @@ title: 资源「USEFUL LINKS」
 
 <h3> Resource sharing</h3>   
 <P>
-<a href="http://jekyllthemes.org"  > Jekyll主题合集</a>我用的就是jekyll。      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank"> Hexo主题合集</a>使用方法里面
+<a href="http://jekyllthemes.org"  > Jekyll 主题合集</a>我用的就是 jekyll。      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank"> Hexo 主题合集</a>使用方法里面
 都有详细的介绍，我就不多说了。      
-<p><a href="http://wiki.xiaolei.tech" target="_blank" > Xiaolei's Wiki </a>一个个人的维基百科库，相当给力！    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" > Yilia </a>- Responsive and simple style 优雅简洁响应式主题。「存个档」
+<p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" > Yilia </a>- Responsive and simple style 优雅简洁响应式主题。「存个档」
 
  <p>
 <h3> Friends</h3>  
  <p>
-<a href="http://www.lilian.info" target="_blank" >LILIAN</a>- 牛人一枚 UESTC
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.dandyweng.com" target="_blank" >翁天信</a>- homeschooling、自由的行者...
+<a href="http://www.17runner.com/" target="_blank" >jiangzhonglian</a>- 炼哥
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://blog.csdn.net/u012185296" target="_blank" >wangyangting</a>- 庭哥
 <p>
-<a href="http://szhshp.org" target="_blank" >szhshp</a>- 前端，设计，游戏，生活.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://xiaolei.tech" target="_blank" >Xiaolei</a>- 电科，影响了我的一位大神.
+<a href="https://my.oschina.net/u/2000675/home" target="_blank" >zhanghuan</a>- 欢总
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://my.csdn.net/qq_15824553?ref=miniprofile" target="_blank" >cuishilei</a>- 小石头.
 
 <h3> Others</h3>  
  <p> 
-Markdown语法参考链接:<a href="https://www.zybuluo.com/mdeditor" target="_blank" > 作业部落 </a> &nbsp;&nbsp; <a  href="http://nav.templatesy.com/"  >Templatesy</a>-前端网址导航.
+Markdown 语法参考链接:<a href="https://www.zybuluo.com/mdeditor" target="_blank" > 作业部落 </a> &nbsp;&nbsp; <a  href="http://nav.templatesy.com/"  >Templatesy</a>-前端网址导航.
 <p>
 <a href="http://www.w3school.com.cn" target="_blank" > w3school </a>-在w3school上，你可以找到全面的~建站资料「html、css、sql、php...」
 </p>
@@ -71,7 +61,7 @@ Markdown语法参考链接:<a href="https://www.zybuluo.com/mdeditor" target="_b
 <a href="/photos/"  style="color:#272727" target="_blank"> <h1>相册「Photos」</h1></a>  
 </p>
 
-<a href="/photos/" target="_blank"><img src="http://omjh2j5h3.bkt.clouddn.com/tupian.png" width="967" height="195" alt="photos" display="block"/></a>
+<a href="/photos/" target="_blank"><img src="http://od8sm9q7x.bkt.clouddn.com/tupian.png" width="967" height="195" alt="photos" display="block"/></a>
 
 <p>
 <a  style="color:#272727" target="_blank"> <h1>游戏「Games」</h1></a>  

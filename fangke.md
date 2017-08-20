@@ -4,7 +4,7 @@ title: 最近访客「Recent Visitors」
 ---
 
 
-![Recent Visitors](http://omjh2j5h3.bkt.clouddn.com/2017.03.17.png)
+![Recent Visitors](http://od8sm9q7x.bkt.clouddn.com/trustMe.png)
 
 <div id="hot-news-wrap"></div>
 <script>var yunModuleEnv = true;</script>
