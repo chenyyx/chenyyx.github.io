@@ -11,8 +11,8 @@ title: 资源「USEFUL LINKS」
 <h3> Personal Website</h3>   
 <p>
 
-<img src="http://od8sm9q7x.bkt.clouddn.com/%E9%85%8D%E8%89%B2%E5%99%A8.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
-<a href="/college/" target="_blank">大学|四年</a>- 记青春年华.&nbsp;&nbsp;
+<!-- <img src="http://od8sm9q7x.bkt.clouddn.com/%E9%85%8D%E8%89%B2%E5%99%A8.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
+<a href="/college/" target="_blank">大学|四年</a>- 记青春年华.&nbsp;&nbsp; -->
 
 <!-- <img src="http://od8sm9q7x.bkt.clouddn.com/%E4%BC%98%E7%95%8C%E7%BD%91.png" width="20" height="20" alt="photos" style="display:inline;margin-bottom: -5px;"/>
 <a href="/college/" style="color:#DC143C" target="_blank">二三好友</a>- 似水流年 & FLAG&nbsp;&nbsp; -->
