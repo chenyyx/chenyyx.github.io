@@ -15,7 +15,7 @@ Jekyll 需要依赖：Ruby、bundler
 
 进chenyyx.github.io/ 目录下， 开启本地服务 
 
-> $ bundle exec jekyll server
+> $ bundle exec jekyll serve
 
 在浏览器输入 [127.0.0.1:4000](127.0.0.1:4000) ， 就可以看到博客效果了。
 
