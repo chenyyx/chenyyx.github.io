@@ -8,7 +8,7 @@ tag: 机器学习实战
 # 第3章 决策树
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-![决策树_首页](/images/ML/3.DecisionTree/DecisionTree_headpage_xy.png "决策树首页")
+![决策树_首页](/images/ML/3.DecisionTree/DT_1.png "决策树首页")
 
 ## 决策树 概述
 
