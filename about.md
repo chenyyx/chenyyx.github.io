@@ -28,8 +28,7 @@ date: 2017-08-20
 </div>
 <p>
 平时喜欢爬爬山，逛逛公园，总之不是在家里宅着就好...           
-<p>
-Although I have a very very very beautiful girlfriend, but there are girls looking for me, I will not refuse.     
+<p>    
 
 <p>
 
