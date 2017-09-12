@@ -31,7 +31,7 @@ tag: 机器学习实战
 
 ### 条件概率
 
-如果你对 p(x,y|c1) 符号很熟悉，那么可以跳过本小节。
+如果你对 p(x,y\|c1) 符号很熟悉，那么可以跳过本小节。
 
 有一个装了 7 块石头的罐子，其中 3 块是白色的，4 块是黑色的。如果从罐子中随机取出一块石头，那么是白色石头的可能性是多少？由于取石头有 7 种可能，其中 3 种为白色，所以取出白色石头的概率为 3/7 。那么取到黑色石头的概率又是多少呢？很显然，是 4/7 。我们使用 P(white) 来表示取到白色石头的概率，其概率值可以通过白色石头数目除以总的石头数目来得到。
 
@@ -41,17 +41,17 @@ tag: 机器学习实战
 
 ![7块石头放入两个桶中](/images/ML/4.NaiveBayesian/NB_3.png)
 
-计算 P(white) 或者 P(black) ，如果事先我们知道石头所在桶的信息是会改变结果的。这就是所谓的条件概率（conditional probablity）。假定计算的是从 B 桶取到白色石头的概率，这个概率可以记作 P(white|bucketB) ，我们称之为“在已知石头出自 B 桶的条件下，取出白色石头的概率”。很容易得到，P(white|bucketA) 值为 2/4 ，P(white|bucketB) 的值为 1/3 。
+计算 P(white) 或者 P(black) ，如果事先我们知道石头所在桶的信息是会改变结果的。这就是所谓的条件概率（conditional probablity）。假定计算的是从 B 桶取到白色石头的概率，这个概率可以记作 P(white\|bucketB) ，我们称之为“在已知石头出自 B 桶的条件下，取出白色石头的概率”。很容易得到，P(white\|bucketA) 值为 2/4 ，P(white\|bucketB) 的值为 1/3 。
 
 条件概率的计算公式如下：
 
-P(white|bucketB) = P(white and bucketB) / P(bucketB)
+P(white\|bucketB) = P(white and bucketB) / P(bucketB)
 
-首先，我们用 B 桶中白色石头的个数除以两个桶中总的石头数，得到 P(white and bucketB) = 1/7 .其次，由于 B 桶中有 3 块石头，而总石头数为 7 ，于是 P(bucketB) 就等于 3/7 。于是又 P(white|bucketB) = P(white and bucketB) / P(bucketB) = (1/7) / (3/7) = 1/3 。
+首先，我们用 B 桶中白色石头的个数除以两个桶中总的石头数，得到 P(white and bucketB) = 1/7 .其次，由于 B 桶中有 3 块石头，而总石头数为 7 ，于是 P(bucketB) 就等于 3/7 。于是又 P(white\|bucketB) = P(white and bucketB) / P(bucketB) = (1/7) / (3/7) = 1/3 。
 
-另外一种有效计算条件概率的方法称为贝叶斯准则。贝叶斯准则告诉我们如何交换条件概率中的条件与结果，即如果已知 P(x|c)，要求 P(c|x)，那么可以使用下面的计算方法：
+另外一种有效计算条件概率的方法称为贝叶斯准则。贝叶斯准则告诉我们如何交换条件概率中的条件与结果，即如果已知 P(x\|c)，要求 P(c\|x)，那么可以使用下面的计算方法：
 
-![计算p(c|x)的方法](/images/ML/4.NaiveBayesian/NB_4.png)
+![计算p(c\|x)的方法](/images/ML/4.NaiveBayesian/NB_4.png)
 
 ### 使用条件概率来分类
 
@@ -59,13 +59,13 @@ P(white|bucketB) = P(white and bucketB) / P(bucketB)
 * 如果 p1(x, y) > p2(x, y), 那么属于类别 1;
 * 如果 p2(x, y) > p1(X, y), 那么属于类别 2.
 
-这并不是贝叶斯决策理论的所有内容。使用 p1() 和 p2() 只是为了尽可能简化描述，而真正需要计算和比较的是 p(c1|x, y) 和 p(c2|x, y) .这些符号所代表的具体意义是: 给定某个由 x、y 表示的数据点，那么该数据点来自类别 c1 的概率是多少？数据点来自类别 c2 的概率又是多少？注意这些概率与概率 p(x, y|c1) 并不一样，不过可以使用贝叶斯准则来交换概率中条件与结果。具体地，应用贝叶斯准则得到: 
+这并不是贝叶斯决策理论的所有内容。使用 p1() 和 p2() 只是为了尽可能简化描述，而真正需要计算和比较的是 p(c1\|x, y) 和 p(c2\|x, y) .这些符号所代表的具体意义是: 给定某个由 x、y 表示的数据点，那么该数据点来自类别 c1 的概率是多少？数据点来自类别 c2 的概率又是多少？注意这些概率与概率 p(x, y\|c1) 并不一样，不过可以使用贝叶斯准则来交换概率中条件与结果。具体地，应用贝叶斯准则得到: 
 
 ![应用贝叶斯准则](/images/ML/4.NaiveBayesian/NB_5.png)
 
 使用上面这些定义，可以定义贝叶斯分类准则为:
-* 如果 P(c1|x, y) > P(c2|x, y), 那么属于类别 c1;
-* 如果 P(c2|x, y) > P(c1|x, y), 那么属于类别 c2.
+* 如果 P(c1\|x, y) > P(c2\|x, y), 那么属于类别 c1;
+* 如果 P(c2\|x, y) > P(c1\|x, y), 那么属于类别 c2.
 
 在文档分类中，整个文档（如一封电子邮件）是实例，而电子邮件中的某些元素则构成特征。我们可以观察文档中出现的词，并把每个词作为一个特征，而每个词的出现或者不出现作为该特征的值，这样得到的特征数目就会跟词汇表中的词的数目一样多。
 
@@ -95,8 +95,8 @@ P(white|bucketB) = P(white and bucketB) / P(bucketB)
         增加所有词条的计数值（此类别下词条总数）
 对每个类别: 
     对每个词条: 
-        将该词条的数目除以总词条数目得到的条件概率（P(词条|类别)）
-返回该文档属于每个类别的条件概率（P(类别|文档的所有词条)）
+        将该词条的数目除以总词条数目得到的条件概率（P(词条\|类别)）
+返回该文档属于每个类别的条件概率（P(类别\|文档的所有词条)）
 ```
 
 ### 朴素贝叶斯 开发流程
@@ -168,8 +168,8 @@ def createVocabList(dataSet):
     """
     vocabSet = set([])  # create empty set
     for document in dataSet:
-        # 操作符 | 用于求两个集合的并集
-        vocabSet = vocabSet | set(document)  # union of the two sets
+        # 操作符 \| 用于求两个集合的并集
+        vocabSet = vocabSet \| set(document)  # union of the two sets
     return list(vocabSet)
 
 
@@ -222,7 +222,7 @@ def setOfWords2Vec(vocabList, inputSet):
 
 我们使用上述公式，对每个类计算该值，然后比较这两个概率值的大小。
 
-首先可以通过类别 i (侮辱性留言或者非侮辱性留言)中的文档数除以总的文档数来计算概率 p(ci) 。接下来计算 p(<b>w</b> | ci) ，这里就要用到朴素贝叶斯假设。如果将 w 展开为一个个独立特征，那么就可以将上述概率写作 p(w0, w1, w2...wn | ci) 。这里假设所有词都互相独立，该假设也称作条件独立性假设（例如 A 和 B 两个人抛骰子，概率是互不影响的，也就是相互独立的，A 抛 2点的同时 B 抛 3 点的概率就是 1/6 * 1/6），它意味着可以使用 p(w0 | ci)p(w1 | ci)p(w2 | ci)...p(wn | ci) 来计算上述概率，这样就极大地简化了计算的过程。
+首先可以通过类别 i (侮辱性留言或者非侮辱性留言)中的文档数除以总的文档数来计算概率 p(ci) 。接下来计算 p(<b>w</b> \| ci) ，这里就要用到朴素贝叶斯假设。如果将 w 展开为一个个独立特征，那么就可以将上述概率写作 p(w0, w1, w2...wn \| ci) 。这里假设所有词都互相独立，该假设也称作条件独立性假设（例如 A 和 B 两个人抛骰子，概率是互不影响的，也就是相互独立的，A 抛 2点的同时 B 抛 3 点的概率就是 1/6 * 1/6），它意味着可以使用 p(w0 \| ci)p(w1 \| ci)p(w2 \| ci)...p(wn \| ci) 来计算上述概率，这样就极大地简化了计算的过程。
 
 朴素贝叶斯分类器训练函数
 
@@ -258,10 +258,10 @@ def _trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    # 类别1，即侮辱性文档的[P(F1|C1),P(F2|C1),P(F3|C1),P(F4|C1),P(F5|C1)....]列表
+    # 类别1，即侮辱性文档的[P(F1\|C1),P(F2\|C1),P(F3\|C1),P(F4\|C1),P(F5\|C1)....]列表
     # 即 在1类别下，每个单词出现的概率
     p1Vect = p1Num / p1Denom# [1,2,3,5]/90->[1/90,...]
-    # 类别0，即正常文档的[P(F1|C0),P(F2|C0),P(F3|C0),P(F4|C0),P(F5|C0)....]列表
+    # 类别0，即正常文档的[P(F1\|C0),P(F2\|C0),P(F3\|C0),P(F4\|C0),P(F5\|C0)....]列表
     # 即 在0类别下，每个单词出现的概率
     p0Vect = p0Num / p0Denom
     return p0Vect, p1Vect, pAbusive
@@ -269,9 +269,9 @@ def _trainNB0(trainMatrix, trainCategory):
 
 > 测试算法: 根据现实情况修改分类器
 
-在利用贝叶斯分类器对文档进行分类时，要计算多个概率的乘积以获得文档属于某个类别的概率，即计算 p(w0|1) * p(w1|1) * p(w2|1)。如果其中一个概率值为 0，那么最后的乘积也为 0。为降低这种影响，可以将所有词的出现数初始化为 1，并将分母初始化为 2 （取1 或 2 的目的主要是为了保证分子和分母不为0，大家可以根据业务需求进行更改）。
+在利用贝叶斯分类器对文档进行分类时，要计算多个概率的乘积以获得文档属于某个类别的概率，即计算 p(w0\|1) * p(w1\|1) * p(w2\|1)。如果其中一个概率值为 0，那么最后的乘积也为 0。为降低这种影响，可以将所有词的出现数初始化为 1，并将分母初始化为 2 （取1 或 2 的目的主要是为了保证分子和分母不为0，大家可以根据业务需求进行更改）。
 
-另一个遇到的问题是下溢出，这是由于太多很小的数相乘造成的。当计算乘积 p(w0|ci) * p(w1|ci) * p(w2|ci)... p(wn|ci) 时，由于大部分因子都非常小，所以程序会下溢出或者得到不正确的答案。（用 Python 尝试相乘许多很小的数，最后四舍五入后会得到 0）。一种解决办法是对乘积取自然对数。在代数中有 ln(a * b) = ln(a) + ln(b), 于是通过求对数可以避免下溢出或者浮点数舍入导致的错误。同时，采用自然对数进行处理不会有任何损失。
+另一个遇到的问题是下溢出，这是由于太多很小的数相乘造成的。当计算乘积 p(w0\|ci) * p(w1\|ci) * p(w2\|ci)... p(wn\|ci) 时，由于大部分因子都非常小，所以程序会下溢出或者得到不正确的答案。（用 Python 尝试相乘许多很小的数，最后四舍五入后会得到 0）。一种解决办法是对乘积取自然对数。在代数中有 ln(a * b) = ln(a) + ln(b), 于是通过求对数可以避免下溢出或者浮点数舍入导致的错误。同时，采用自然对数进行处理不会有任何损失。
 
 下图给出了函数 f(x) 与 ln(f(x)) 的曲线。可以看出，它们在相同区域内同时增加或者减少，并且在相同点上取到极值。它们的取值虽然不同，但不影响最终结果。
 
@@ -311,9 +311,9 @@ def trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    # 类别1，即侮辱性文档的[log(P(F1|C1)),log(P(F2|C1)),log(P(F3|C1)),log(P(F4|C1)),log(P(F5|C1))....]列表
+    # 类别1，即侮辱性文档的[log(P(F1\|C1)),log(P(F2\|C1)),log(P(F3\|C1)),log(P(F4\|C1)),log(P(F5\|C1))....]列表
     p1Vect = log(p1Num / p1Denom)
-    # 类别0，即正常文档的[log(P(F1|C0)),log(P(F2|C0)),log(P(F3|C0)),log(P(F4|C0)),log(P(F5|C0))....]列表
+    # 类别0，即正常文档的[log(P(F1\|C0)),log(P(F2\|C0)),log(P(F3\|C0)),log(P(F4\|C0)),log(P(F5\|C0))....]列表
     p0Vect = log(p0Num / p0Denom)
     return p0Vect, p1Vect, pAbusive
 
@@ -329,21 +329,21 @@ def classifyNB(vec2Classify, p0Vec, p1Vec, pClass1):
     """
     使用算法：
         # 将乘法转换为加法
-        乘法：P(C|F1F2...Fn) = P(F1F2...Fn|C)P(C)/P(F1F2...Fn)
-        加法：P(F1|C)*P(F2|C)....P(Fn|C)P(C) -> log(P(F1|C))+log(P(F2|C))+....+log(P(Fn|C))+log(P(C))
+        乘法：P(C\|F1F2...Fn) = P(F1F2...Fn\|C)P(C)/P(F1F2...Fn)
+        加法：P(F1\|C)*P(F2\|C)....P(Fn\|C)P(C) -> log(P(F1\|C))+log(P(F2\|C))+....+log(P(Fn\|C))+log(P(C))
     :param vec2Classify: 待测数据[0,1,1,1,1...]，即要分类的向量
-    :param p0Vec: 类别0，即正常文档的[log(P(F1|C0)),log(P(F2|C0)),log(P(F3|C0)),log(P(F4|C0)),log(P(F5|C0))....]列表
-    :param p1Vec: 类别1，即侮辱性文档的[log(P(F1|C1)),log(P(F2|C1)),log(P(F3|C1)),log(P(F4|C1)),log(P(F5|C1))....]列表
+    :param p0Vec: 类别0，即正常文档的[log(P(F1\|C0)),log(P(F2\|C0)),log(P(F3\|C0)),log(P(F4\|C0)),log(P(F5\|C0))....]列表
+    :param p1Vec: 类别1，即侮辱性文档的[log(P(F1\|C1)),log(P(F2\|C1)),log(P(F3\|C1)),log(P(F4\|C1)),log(P(F5\|C1))....]列表
     :param pClass1: 类别1，侮辱性文件的出现概率
     :return: 类别1 or 0
     """
-    # 计算公式  log(P(F1|C))+log(P(F2|C))+....+log(P(Fn|C))+log(P(C))
+    # 计算公式  log(P(F1\|C))+log(P(F2\|C))+....+log(P(Fn\|C))+log(P(C))
     # 大家可能会发现，上面的计算公式，没有除以贝叶斯准则的公式的分母，也就是 P(w) （P(w) 指的是此文档在所有的文档中出现的概率）就进行概率大小的比较了，
     # 因为 P(w) 针对的是包含侮辱和非侮辱的全部文档，所以 P(w) 是相同的。
     # 使用 NumPy 数组来计算两个向量相乘的结果，这里的相乘是指对应元素相乘，即先将两个向量中的第一个元素相乘，然后将第2个元素相乘，以此类推。
     # 我的理解是：这里的 vec2Classify * p1Vec 的意思就是将每个词与其对应的概率相关联起来
-    p1 = sum(vec2Classify * p1Vec) + log(pClass1) # P(w|c1) * P(c1) ，即贝叶斯准则的分子
-    p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1) # P(w|c0) * P(c0) ，即贝叶斯准则的分子·
+    p1 = sum(vec2Classify * p1Vec) + log(pClass1) # P(w\|c1) * P(c1) ，即贝叶斯准则的分子
+    p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1) # P(w\|c0) * P(c0) ，即贝叶斯准则的分子·
     if p1 > p0:
         return 1
     else:
@@ -461,9 +461,9 @@ def trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    # 类别1，即侮辱性文档的[log(P(F1|C1)),log(P(F2|C1)),log(P(F3|C1)),log(P(F4|C1)),log(P(F5|C1))....]列表
+    # 类别1，即侮辱性文档的[log(P(F1\|C1)),log(P(F2\|C1)),log(P(F3\|C1)),log(P(F4\|C1)),log(P(F5\|C1))....]列表
     p1Vect = log(p1Num / p1Denom)
-    # 类别0，即正常文档的[log(P(F1|C0)),log(P(F2|C0)),log(P(F3|C0)),log(P(F4|C0)),log(P(F5|C0))....]列表
+    # 类别0，即正常文档的[log(P(F1\|C0)),log(P(F2\|C0)),log(P(F3\|C0)),log(P(F4\|C0)),log(P(F5\|C0))....]列表
     p0Vect = log(p0Num / p0Denom)
     return p0Vect, p1Vect, pAbusive
 ```
@@ -590,7 +590,7 @@ def bagOfWords2VecMN(vocaList, inputSet):
 def createVocabList(dataSet):
     vocabSet=set([])    #创建一个空集
     for document in dataSet:
-        vocabSet=vocabSet|set(document)   #创建两个集合的并集
+        vocabSet=vocabSet\|set(document)   #创建两个集合的并集
     return list(vocabSet)
 def setOfWords2VecMN(vocabList,inputSet):
     returnVec=[0]*len(vocabList)  #创建一个其中所含元素都为0的向量
@@ -645,9 +645,9 @@ def trainNB0(trainMatrix, trainCategory):
         else:
             p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    # 类别1，即侮辱性文档的[log(P(F1|C1)),log(P(F2|C1)),log(P(F3|C1)),log(P(F4|C1)),log(P(F5|C1))....]列表
+    # 类别1，即侮辱性文档的[log(P(F1\|C1)),log(P(F2\|C1)),log(P(F3\|C1)),log(P(F4\|C1)),log(P(F5\|C1))....]列表
     p1Vect = log(p1Num / p1Denom)
-    # 类别0，即正常文档的[log(P(F1|C0)),log(P(F2|C0)),log(P(F3|C0)),log(P(F4|C0)),log(P(F5|C0))....]列表
+    # 类别0，即正常文档的[log(P(F1\|C0)),log(P(F2\|C0)),log(P(F3\|C0)),log(P(F4\|C0)),log(P(F5\|C0))....]列表
     p0Vect = log(p0Num / p0Denom)
     return p0Vect, p1Vect, pAbusive
 ```
