@@ -79,7 +79,7 @@ date: 2017-08-20
 </p>
 
 
-<div class="search_form">
+<!-- <div class="search_form">
     <div id="cse">
 		<div class="gsc-control-cse gsc-control-cse-en">
 			<div class="gsc-control-wrapper-cse" dir="ltr">
@@ -163,6 +163,22 @@ date: 2017-08-20
 	</div>
 </div>
 </div>
+</div> -->
+
+<div id="abc">
+<script>
+  (function() {
+    var cx = '002061538256549327231:sbiszv7plg8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox></gcse:searchbox>
+<gcse:searchresults></gcse:searchresults>
 </div>
 
 <!-- 来必力City版安装代码 -->
