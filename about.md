@@ -177,7 +177,7 @@ date: 2017-08-20
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchbox></gcse:searchbox>
+<gcse:search></gcse:search>
 <gcse:searchresults></gcse:searchresults>
 </div>
 
