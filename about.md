@@ -78,6 +78,19 @@ date: 2017-08-20
 <a href="/yyyyyx/" style="color:#708090"  target="_blank"> <h5>Website Time</h5></a>  
 </p>
 
+<script>
+  (function() {
+    var cx = '002061538256549327231:sbiszv7plg8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzg4My8xMDQzNg==">
 <script type="text/javascript">
