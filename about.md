@@ -165,7 +165,6 @@ date: 2017-08-20
 </div>
 </div> -->
 
-<div id="abc">
 <script>
   (function() {
     var cx = '002061538256549327231:sbiszv7plg8';
@@ -179,7 +178,6 @@ date: 2017-08-20
 </script>
 <gcse:searchbox></gcse:searchbox>
 <gcse:searchresults></gcse:searchresults>
-</div>
 
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzg4My8xMDQzNg==">
