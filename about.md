@@ -78,22 +78,91 @@ date: 2017-08-20
 <a href="/yyyyyx/" style="color:#708090"  target="_blank"> <h5>Website Time</h5></a>  
 </p>
 
-<div id="google">
-<!-- SiteSearch Google -->
-<form method="get" action="http://www.google.com/search">    
-<table bgcolor="#FFFFFF">        
-<tr><td>                
-<a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" /></a>          
- </td>                        
-<td>                
-<input type="text" name="q" size="10" maxlength="200" value="" />
-<input type="hidden" name="hl" value="zh-CN" />
-<input type="submit" name="btnG" value="搜索" />
-<font size="-1"><input type="hidden" name="domains" value="http://www.yyx.ai" /> <input type="radio" name="sitesearch" value="" />Web<input type="radio" name="sitesearch" value="http://www.yyx.ai" checked="checked" /> 本站</font>            
-</td>        
-</tr>    
-</table></form>
-<!-- SiteSearch Google -->
+
+<div class="search_form">
+    <div id="cse">
+		<div class="gsc-control-cse gsc-control-cse-en">
+			<div class="gsc-control-wrapper-cse" dir="ltr">
+				<form class="gsc-search-box" accept-charset="utf-8">
+					<table cellspacing="0" cellpadding="0" class="gsc-search-box">
+						<tbody>
+							<tr>
+								<td class="gsc-input"><input autocomplete="off" type="text" size="10" class=" gsc-input " name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" placeholder="Custom Search" style="outline: none; background: url(&quot;http://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;">
+								</td>
+								<td class="gsc-search-button">
+									<input type="button" value="Search" class="gsc-search-button" title="search">
+								</td>
+								<td class="gsc-clear-button">
+									<div class="gsc-clear-button" title="clear results">&nbsp;</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table cellspacing="0" cellpadding="0" class="gsc-branding">
+						<tbody>
+							<tr>
+								<td class="gsc-branding-user-defined">
+								</td>
+								<td class="gsc-branding-text">
+									<div class="gsc-branding-text">powered by</div>
+								</td>
+								<td class="gsc-branding-img">
+									<img src="https://www.google.com/cse/static/images/1x/googlelogo_grey_46x15dp.png" class="gsc-branding-img" srcset="https://www.google.com/cse/static/images/2x/googlelogo_grey_46x15dp.png 2x">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			<div class="gsc-results-wrapper-nooverlay">
+				<div class="gsc-tabsAreaInvisible">
+					<div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">自定义搜索</div>
+						<span class="gs-spacer"> </span>
+					</div>
+					<div class="gsc-tabsAreaInvisible"></div>
+					<div class="gsc-above-wrapper-area-invisible">
+						<table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container">
+							<tbody>
+								<tr>
+									<td class="gsc-result-info-container">
+										<div class="gsc-result-info-invisible"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="gsc-adBlockInvisible"></div>
+					<div class="gsc-wrapper">
+						<div class="gsc-adBlockInvisible"></div>
+						<div class="gsc-resultsbox-invisible">
+							<div class="gsc-resultsRoot gsc-tabData gsc-tabdActive">
+								<table cellspacing="0" cellpadding="0" class="gsc-resultsHeader">
+									<tbody>
+										<tr>
+											<td class="gsc-twiddleRegionCell">
+												<div class="gsc-twiddle">
+													<div class="gsc-title">Web</div>
+												</div>
+												<div class="gsc-stats"></div>
+												<div class="gsc-results-selector gsc-all-results-active">
+													<div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div>
+													<div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div>
+													<div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div>
+												</div>
+											</td>
+											<td class="gsc-configLabelCell"></td>
+										</tr>
+									</tbody>
+								</table>
+							<div>
+							<div class="gsc-expansionArea"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 </div>
 
 <!-- 来必力City版安装代码 -->
