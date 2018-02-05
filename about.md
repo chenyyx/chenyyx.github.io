@@ -90,7 +90,7 @@ date: 2017-08-20
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:searchresults-only></gcse:searchresults-only>
+<gcse:searchbox></gcse:searchbox>
 </div>
 
 <!-- 来必力City版安装代码 -->
