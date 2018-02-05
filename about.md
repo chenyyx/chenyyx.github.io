@@ -78,6 +78,7 @@ date: 2017-08-20
 <a href="/yyyyyx/" style="color:#708090"  target="_blank"> <h5>Website Time</h5></a>  
 </p>
 
+<div id="google">
 <script>
   (function() {
     var cx = '002061538256549327231:sbiszv7plg8';
@@ -89,7 +90,8 @@ date: 2017-08-20
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:searchresults-only></gcse:searchresults-only>
+</div>
 
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzg4My8xMDQzNg==">
