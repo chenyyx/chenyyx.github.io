@@ -79,18 +79,21 @@ date: 2017-08-20
 </p>
 
 <div id="google">
-<script>
-  (function() {
-    var cx = '002061538256549327231:sbiszv7plg8';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:searchbox></gcse:searchbox>
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/search">    
+<table bgcolor="#FFFFFF">        
+<tr><td>                
+<a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" /></a>          
+ </td>                        
+<td>                
+<input type="text" name="q" size="10" maxlength="200" value="" />
+<input type="hidden" name="hl" value="zh-CN" />
+<input type="submit" name="btnG" value="搜索" />
+<font size="-1"><input type="hidden" name="domains" value="http://www.yyx.ai" /> <input type="radio" name="sitesearch" value="" />Web<input type="radio" name="sitesearch" value="http://www.yyx.ai" checked="checked" /> 本站</font>            
+</td>        
+</tr>    
+</table></form>
+<!-- SiteSearch Google -->
 </div>
 
 <!-- 来必力City版安装代码 -->
