@@ -183,9 +183,9 @@ date: 2017-08-20
 </div> -->
 
 <!-- 百度站内搜索 start-->
-<div>
 <script type="text/javascript">
-	(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+	(function(){
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
 		var bdcs = document.createElement('script');
 		bdcs.type = 'text/javascript';
 		bdcs.async = true;
@@ -194,7 +194,6 @@ date: 2017-08-20
 		s.parentNode.insertBefore(bdcs, s);
 	})();
 </script>
-</div>
 <!-- 百度站内搜索 end-->
 </body>
 
