@@ -185,7 +185,8 @@ date: 2017-08-20
 
 <!-- 百度站内搜索 start-->
 <body>
-<script>
+<!-- <script>
+	悬浮式
 	alert("ok");
 	(function() {
 		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
@@ -196,10 +197,9 @@ date: 2017-08-20
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(bdcs, s);
 	})();
-</script>
+</script> -->
 
-<!-- <script>
-嵌入式	
+<script>
 	(function() {
 		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
 		var bdcs = document.createElement('script');
@@ -209,7 +209,7 @@ date: 2017-08-20
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(bdcs, s);
 	})();
-</script> -->
+</script>
 </body>
 <!-- 百度站内搜索 end-->
 
