@@ -186,8 +186,8 @@ date: 2017-08-20
 <!-- 百度站内搜索 start-->
 <body>
 <script>
-	alert('ok');
-	(function() {document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
+	(function() {
+		document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));
 		var bdcs = document.createElement('script');
 		bdcs.type = 'text/javascript';
 		bdcs.async = true;
